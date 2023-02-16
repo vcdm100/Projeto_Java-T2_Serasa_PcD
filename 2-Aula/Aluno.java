@@ -7,4 +7,20 @@ class Aluno {
         this.nomeCompleto = nomeCompleto;
         this.idade = idade;
     }
+
+    public String getNomeCompleto() {
+        return nomeCompleto;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setNome(String nomeCompleto) {
+        this.nomeCompleto = nomeCompleto;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
 }
