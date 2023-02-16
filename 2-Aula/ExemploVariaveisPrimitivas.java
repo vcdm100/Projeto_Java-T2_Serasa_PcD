@@ -1,5 +1,6 @@
 public class ExemploVariaveisPrimitivas {
     public static void main(String[] args) {
+        
         int meuInteiro = 42;
         double meuDouble = 3.14159;
         char meuChar = 'A';
