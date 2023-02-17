@@ -1,13 +1,12 @@
 import java.util.Scanner;
 class Formulario {
-    
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Qual é nome do Aluno?");
+        System.out.println("Qual é nome do aluno?");
         String nomeAluno = scanner.next();
 
-        System.out.println("Qual é a idade do Aluno?");
+        System.out.println("Qual é a idade do aluno?");
         int idade = scanner.nextInt();
 
         Chamada chamada = new Chamada();
