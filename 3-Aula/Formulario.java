@@ -4,7 +4,7 @@ class Formulario {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Qual é nome do aluno?");
+        System.out.println("Qual é o nome do aluno?");
         String nomeAluno = scanner.next();
 
         System.out.println("Qual é a idade do aluno?");
