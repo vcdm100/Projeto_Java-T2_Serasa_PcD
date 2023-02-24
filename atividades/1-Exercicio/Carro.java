@@ -4,13 +4,56 @@
  * Variáveis: Marca, Modelo, AnoFabricacao e VelocidadeAtual.
  * Métodos: Acelera ou Diminuir a velocidade do carro e Informações do carro.
  */
-import java.util.Scanner;
+
+/*
+ * import java.util.Scanner;
+*/
 
 class Carro {
 
     String marca, modelo;
     int AnoFabricacao, VelocidadeAtual;
-    public static void main(String[] args) {
+
+    public void acelerar() {
+        VelocidadeAtual += 10;
+    }
+
+    public void frear() {
+        VelocidadeAtual -= 10;
+    }
+
+    public void imprimirInformacoes() {
+        System.out.println("Marca do seu carro: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Ano de fabricação: " + AnoFabricacao);
+        System.out.println("Velocidade atual: " + VelocidadeAtual + " Km/h");
+
+    }
+
+}
+class ExercicioCarro {
+    public static void main (String[] args) {
+        Carro meuCarro = new Carro ();
+
+        meuCarro.marca = "Toyota";
+        meuCarro.modelo = "Corolla";
+        meuCarro.AnoFabricacao = 2021;
+
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.frear();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.frear();
+
+        meuCarro.imprimirInformacoes();
+
+    }
+}
+
+/* public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Qual é a marca do seu carro: ");
@@ -35,5 +78,4 @@ class Carro {
         System.out.println("Informações do seu carro: " + marca + ", " + modelo + ", " + AnoFabricacao + " e " + VelocidadeAtual + " Km/h");
 
         scanner.close();
-    }
-}
+    }*/
