@@ -2,7 +2,7 @@
  * Exercício 01
  * 
  * Variáveis: Marca, Modelo, AnoFabricacao e VelocidadeAtual.
- * Métodos: Acelera ou Diminuir a velocidade do carro e Informações do carro.
+ * Métodos: Acelera, Frear e Imprimir informações.
  */
 
 /*
