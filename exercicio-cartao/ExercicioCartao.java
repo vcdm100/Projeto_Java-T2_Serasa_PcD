@@ -28,9 +28,8 @@ class CartaoCredito extends Cartao {
         String nomeTitular,
         String validade, 
         int cvv, 
-        String bandeira) 
-
-    {
+        String bandeira
+    ) {
         super(
             numero, 
             nomeTitular, 
