@@ -12,8 +12,8 @@ class Cartao {
         String nomeTitular, 
         String validade, 
         int cvv, 
-        String bandeira) {
-
+        String bandeira
+    ) {
         this.numero = numero;
         this.nomeTitular = nomeTitular;
         this.validade = validade;
@@ -42,7 +42,7 @@ class CartaoCredito extends Cartao {
 
 class Compra {
     public Compra(
-        float valor,
+        double valor,
         int parcela,
         int quantidade
     ) {
@@ -70,7 +70,7 @@ public class ExercicioCartao {
         );
 
         Pagamento pagamento = new pagamento (compra, cartaoCredito);
-
+        
         pagamento.realizar();
 
     }
