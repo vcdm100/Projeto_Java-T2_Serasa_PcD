@@ -48,13 +48,13 @@ class Filme {
     }
 }
 
-
 public class Netflix {
     private Filme[] filmes;
     private Serie[] series;
     private Categoria[] categorias;
     private ContaPerfil contaPerfil;
 
+    // Metodo Construtor
     public Netflix(
         Filme[] filmes,
         Serie[] series,
