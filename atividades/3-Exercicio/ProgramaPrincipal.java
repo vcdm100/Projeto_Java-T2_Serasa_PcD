@@ -1,4 +1,4 @@
-// O Exercicio começa a partir da linha 18
+// O Exercicio começa a partir da linha 18 - ALUNO: Victor Cláudio Deosdede Moura
 // Criar um arquivo com o nome ProgramaPrincipal.java
 public class ProgramaPrincipal {
     // Esse código esta correto
@@ -17,7 +17,7 @@ public class ProgramaPrincipal {
     }
 }
 
-// Existem 10 erros
+// 10 erros corrigidos
 class ContaBancaria {
     // Atributos
     private int numeroConta;
@@ -25,25 +25,31 @@ class ContaBancaria {
     private double saldoAtual;
 
     // Método Construtor
-    public Conta(int numeroConta, String nomeTitular) {
-        numeroConta = numeroConta;
-        nomeTitular = nomeTitular;
+    public ContaBancaria(int numeroConta, String nomeTitular) {
+        this.numeroConta = numeroConta;
+        this.nomeTitular = nomeTitular;
     }
 
     // Métodos
-    private String depositar(double valorDeposito) {
-        saldoAtual = saldoAtual + valorDeposito;
+    public void depositar(double valorDeposito) {
+        saldoAtual += valorDeposito;
     }
 
-    private void sacar(double valorSaque) {
+    public void sacar(double valorSaque) {
         if (valorSaque > saldoAtual) {
             System.out.println("Saldo insuficiente");
         } else {
-            saldoAtual = saldoAtual - valorSaque;
+            saldoAtual -= valorSaque;
         }
     }
 
-    private void obterSaldo() {
+    public double obterSaldo() {
         return saldoAtual;
     }
 }
+
+//Resposta da Terminal
+
+//Saldo insuficiente
+//Saldo da conta 1: 700.0
+//Saldo da conta 2: 500.0
