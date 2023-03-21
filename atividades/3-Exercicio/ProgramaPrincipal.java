@@ -24,6 +24,14 @@ class ContaBancaria {
     private String nomeTitular;
     private double saldoAtual;
 
+    public int getNumeroConta() {
+        return this.numeroConta;
+    }
+
+    public String getNomeTitular() {
+        return this.nomeTitular;
+    }
+
     // Método Construtor
     public ContaBancaria(int numeroConta, String nomeTitular) {
         this.numeroConta = numeroConta;
